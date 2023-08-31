@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form.css" />
+    <script src="../app.js" defer></script>
+  </head>
+  <body>
+    <div class="form__container">
+      <form id="form" class="form">
+        <div class="form__group">
+          <label class="form__label">Ismingiz: </label>
+          <input
+            type="text"
+            name="name"
+            class="form__input"
+            placeholder="Yozing..."
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label">Pochtangiz: </label>
+          <input
+            type="email"
+            name="email"
+            class="form__input"
+            placeholder="Yozing..."
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label">Telefon raqamingiz: </label>
+          <input
+            type="number"
+            name="number"
+            class="form__input"
+            placeholder="99124567"
+            maxlength="12"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label">Murojaatingiz: </label>
+          <textarea
+            name="message"
+            class="form__text"
+            rows="5"
+            placeholder="Yozing..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form__button">Jo'natish</button>
+      </form>
+    </div>
+
+    <!-- SWEETALERT2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AXIOS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
